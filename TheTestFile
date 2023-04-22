@@ -1,0 +1,219 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local MurderMystery2Exploit = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local DeveloperText = Instance.new("TextLabel")
+
+--Properties:
+
+MurderMystery2Exploit.Name = "MurderMystery2Exploit"
+MurderMystery2Exploit.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MurderMystery2Exploit.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MurderMystery2Exploit.ResetOnSpawn = false
+
+Frame.Parent = MurderMystery2Exploit
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame.Position = UDim2.new(0.236102313, 0, 0.209295616, 0)
+Frame.Size = UDim2.new(0.42406258, 0, 0.577999949, 0)
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel.ZIndex = 0
+ImageLabel.Image = "rbxassetid://13213128802"
+ImageLabel.ImageTransparency = 0.950
+ImageLabel.ScaleType = Enum.ScaleType.Crop
+
+UICorner.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner.Parent = ImageLabel
+
+UIAspectRatioConstraint.Parent = Frame
+UIAspectRatioConstraint.AspectRatio = 1.625
+UIAspectRatioConstraint.DominantAxis = Enum.DominantAxis.Height
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.50199753, 0, 0.0151286842, 0)
+TextLabel.Size = UDim2.new(0.493513227, 0, 0.114607468, 0)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Mystery Hub | Murder Mystery 2"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel_2.Parent = Frame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0.0148966676, 0, 0.0156572163, 0)
+ImageLabel_2.Size = UDim2.new(0.474892437, 0, 0.773069382, 0)
+ImageLabel_2.Image = "rbxassetid://13213116258"
+
+UICorner_2.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_2.Parent = ImageLabel_2
+
+UICorner_3.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_3.Parent = Frame
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(122, 122, 122)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(66, 66, 66))}
+UIGradient.Rotation = 90
+UIGradient.Parent = Frame
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.499249041, 0, 0.128231198, 0)
+TextLabel_2.Size = UDim2.new(0.493513286, 0, 0.077148512, 0)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "Actual Hub Version: 1.6-2"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.013806399, 0, 0.807873368, 0)
+TextLabel_3.Size = UDim2.new(0.985103309, 0, 0.158843577, 0)
+TextLabel_3.Font = Enum.Font.FredokaOne
+TextLabel_3.Text = "Hello! PlayerName, Please enter key a little higher"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+TextBox.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextBox.Position = UDim2.new(0.503648877, 0, 0.566372395, 0)
+TextBox.Size = UDim2.new(0.488666803, 0, 0.180023611, 0)
+TextBox.Font = Enum.Font.FredokaOne
+TextBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+TextBox.PlaceholderText = "Enter Key Here"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(178, 178, 178)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_4.Parent = TextBox
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.50111109, 0, 0.258338153, 0)
+TextLabel_4.Size = UDim2.new(0.493513286, 0, 0.134637624, 0)
+TextLabel_4.Font = Enum.Font.FredokaOne
+TextLabel_4.Text = "Last update: 04.22"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+DeveloperText.Name = "DeveloperText"
+DeveloperText.Parent = Frame
+DeveloperText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DeveloperText.BackgroundTransparency = 1.000
+DeveloperText.Position = UDim2.new(0.50111109, 0, 0.404613823, 0)
+DeveloperText.Size = UDim2.new(0.493513286, 0, 0.152792096, 0)
+DeveloperText.Visible = false
+DeveloperText.Font = Enum.Font.FredokaOne
+DeveloperText.Text = "Text"
+DeveloperText.TextColor3 = Color3.fromRGB(255, 170, 0)
+DeveloperText.TextScaled = true
+DeveloperText.TextSize = 14.000
+DeveloperText.TextWrapped = true
+
+-- Scripts:
+
+local function HFWYG_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local Frame = script.Parent
+	
+	Frame.Active = true
+	Frame.Draggable = true
+end
+coroutine.wrap(HFWYG_fake_script)()
+local function CKMQ_fake_script() -- TextLabel_3.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_3)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.Text = "Hello! " .. player.Name .. ", Please enter key"
+end
+coroutine.wrap(CKMQ_fake_script)()
+local function TAFXJFM_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	local Player = game.Players.LocalPlayer
+	
+	local Key = "MysteryHubKey"
+	local Box = script.Parent
+	
+	local DevText = script.Parent.Parent.DeveloperText
+	
+	Box.FocusLost:Connect(function()		
+		if Box.Text ~= Key then
+			Box.Text = ""
+			Box.PlaceholderText = "Invalid key"
+			wait(1)
+			Box.PlaceholderText = "Enter Key Here"
+		elseif Box.Text == Key then
+			Box.Text = ""
+			Box.PlaceholderText = "Correct Key!"
+			wait(1)
+			
+			end
+		end)
+end
+coroutine.wrap(TAFXJFM_fake_script)()
+local function ZGDKQ_fake_script() -- DeveloperText.LocalScript 
+	local script = Instance.new('LocalScript', DeveloperText)
+
+	script.Parent.Visible = false
+	
+	local Player = game.Players.LocalPlayer
+	
+	if Player.Name == "ULEY_TOPCHIK192" then
+		script.Parent.Visible = true
+		script.Parent.Text = "You are Developer. Key is: MysteryHubKey"
+	else
+		script.Parent.Visible = false
+		script.Parent.Text = "LOL"
+	end
+	
+	if Player.Name == "KraKeurZZ" then
+		script.Parent.Visible = true
+		script.Parent.Text = "You are Developer. Key is: MysteryHubKey"
+	else
+		script.Parent.Visible = false
+		script.Parent.Text = "LOL"
+	end
+end
+coroutine.wrap(ZGDKQ_fake_script)()
